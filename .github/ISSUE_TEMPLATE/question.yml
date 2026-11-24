@@ -1,0 +1,33 @@
+name: Question
+description: Ask a question about using Snowfree.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about how something works? Ask here.
+
+        Do not include private account, purchase, license, or personal information here. For private support, email **support@komocode.com** instead.
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Existing issues
+      options:
+        - label: I searched existing issues and the README and didn't find an answer.
+          required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version & build
+      description: Optional, but helpful for usage questions.
+      placeholder: "1.0.0 (1)"
+    validations:
+      required: false

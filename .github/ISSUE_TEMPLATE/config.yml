@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email support
+    url: mailto:support@komocode.com
+    about: Prefer email, or have a private account or purchase issue? Reach us directly.
+  - name: Snowfree website
+    url: https://snowfree.komocode.com
+    about: Product info, guides, and latest news.

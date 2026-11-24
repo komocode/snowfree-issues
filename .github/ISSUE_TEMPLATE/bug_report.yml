@@ -1,0 +1,74 @@
+name: Bug report
+description: Report something that isn't working in Snowfree.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        Do not include private account, purchase, license, or personal information here. For private support, email **support@komocode.com** instead.
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Existing issues
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version & build
+      description: Find this in Help -> About, if available.
+      placeholder: "1.0.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Which device are you using?
+      placeholder: "iPad Pro M4 / iPhone 16 Pro / MacBook Pro M3"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS version
+      description: Operating system and version.
+      placeholder: "iPadOS 26 / iOS 26 / macOS 26"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: What's wrong? Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can the issue be reproduced?
+      placeholder: |
+        1. Open the app
+        2. Tap ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected outcome
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or screen recording
+      description: Optional. Drag and drop an image or video here to help explain the issue.
+    validations:
+      required: false
